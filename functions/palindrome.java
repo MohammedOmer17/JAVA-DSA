@@ -12,6 +12,17 @@ public class palindrome {
         return count;
     }
 
+
+    static int reverse(int num){
+        int newnum = 0;
+        while(num > 0){
+            int rem = num%10;
+            newnum = newnum*10 + rem;
+            num = num/10;
+        }
+        return newnum;
+    }
+
     static int ReverseNum(int num){
         int power = Numlength(num);
         int newnum = 0;
@@ -28,7 +39,8 @@ public class palindrome {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number : ");
         int num = sc.nextInt();
-        int newnum = ReverseNum(num);
+        // int newnum = ReverseNum(num);
+        int newnum = reverse(num);
 
         if(num == newnum){
             System.out.println(num +" is a palindrome.");
