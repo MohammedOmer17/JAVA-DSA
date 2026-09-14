@@ -1,6 +1,5 @@
 package LeetCode;
 
-import java.util.*;
 
 public class TrapRain {
 
