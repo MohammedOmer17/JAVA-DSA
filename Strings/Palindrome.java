@@ -1,5 +1,4 @@
 package Strings;
-import java.util.*;
 
 public class Palindrome {
 
@@ -24,7 +23,6 @@ public class Palindrome {
     public static void main(String args[]){
 
         String word = "racecar";
-        String result = palindrome(word);
         boolean result2 = palindromeOptimized(word);
 
         if(result2 == true){
